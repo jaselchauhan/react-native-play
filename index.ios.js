@@ -10,6 +10,8 @@ Text,
 View
 } from 'react-native';
 
+var SearchPage = require('./SearchPage');
+
 var styles = StyleSheet.create({
   text: {
     color: 'black',
@@ -22,12 +24,6 @@ var styles = StyleSheet.create({
   }
 });
 
-class HelloWorld extends Component {
-  render() {
-    return <Text style={styles.text}>Hello World (Again)</Text>;
-  }
-}
-
 
 class PropertyFinderApp extends Component {
   render() {
@@ -36,7 +32,7 @@ class PropertyFinderApp extends Component {
         style={styles.container}
         initialRoute={{
           title: 'Property Finder',
-          component: HelloWorld,
+          component: SearchPage,
         }}/>
     );
   }
